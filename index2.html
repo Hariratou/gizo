@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <!--Icon pour google-->
+    <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css">
+
+    <!--css-->
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
+    <link rel="stylesheet" href="style.css">
+
+    <!--js-->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.js"
+        integrity="sha256-DrT5NfxfbHvMHux31Lkhxg42LY6of8TaYyK50jnxRnM=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sign up</title>
+
+    <script>
+
+        //Sidenav
+        document.addEventListener('DOMContentLoaded', function () {
+            var elem = document.querySelectorAll('.sidenav');
+            var instances = M.Sidenav.init(elem, {});
+        });
+
+        //FormSelect
+        document.addEventListener('DOMContentLoaded', function () {
+            var elem = document.querySelectorAll('select');
+            var instances = M.FormSelect.init(elem, {});
+        });
+
+        // modal script
+        document.addEventListener('DOMContentLoaded', function () {
+            var elem = document.querySelectorAll('.modal');
+            var instances = M.Modal.init(elem, {});
+        });
+
+    </script>
+</head>
+
+<body>
+
+    <!-- navbar -->
+    <div class="navbar-fixed">
+        <nav class="deep-purple">
+            <div class="container">
+                <div class="nav-wraper">
+                    <a href="#" class="brand-logo">GizoGizo</a>
+                    <a href="#" data-target="mobile-nav" class="sidenav-trigger">
+                        <i class="material-icons">menu</i>
+                    </a>
+                    <ul class="right hide-on-med-and-down">
+                        <li><a href="index.html"> <span class="purple-text ">Home</span></a></li>
+                        <li><a href="index1.html">Solutions</a></li>
+                        <li><a href="index2.html">Sign Up</a></li>
+                        <li><a href="#modal-a" class="btn-large purple darkin-1 modal-trigger">LOGIN</a></li>
+                        <li><a href="#"><i class="fab fa-facebook-square"></i></a></li>
+                        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                        <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <ul class="sidenav" id="mobile-nav">
+        <li><a href="#"><i class="fas fa-home"></i>Home</a></li>
+        <li><a href="#"><i class="fas fa-cog"></i> Solutions</a></li>
+        <li><a href="#"><i class="fas fa-users"></i>Sign Up</a></li>
+        <li><a href="#" class="btn-large purple darkin-1">Login</a></li>
+    </ul>
+
+    <!-- Modal -->
+    <div id="modal-a" class="modal black-text">
+        <div class="modal-content">
+            <h4>Account Login</h4>
+            <p>Login to access your account dashboard</p>
+            <form>
+
+                <div class="row">
+                    <div class="input-field col s12">
+                        <input type="email" id="email" class="validate">
+                        <label for="email">Email</label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-field col s12">
+                        <input type="password" id="password" class="validate">
+                        <label for="password">Password</label>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div class="modal-footer">
+            <a href="" class="modal-close waves-effect waves-light btn grey "><i
+                    class="fas fa-refresh white-text "></i>RESET PASSWORD</a>
+
+            <a href="" class="modal-close waves-effect waves-light btn purple"><i class="fas fa-lock "></i> LOGIN</a>
+        </div>
+    </div>
+
+    <!-- welcome to gizogizo -->
+    <div class="deep-purple white-text center">
+        <div class="container" style="padding-top: 50px; padding-bottom: 50px;">
+            <h6>Welcome To GizoGizo</h6>
+            <h3>Create An Account</h3>
+        </div>
+    </div>
+
+    <!--formulaire-->
+    <div class="formulaire">
+        <div class="container" style="padding-top: 20px; padding-bottom: 20px;">
+            <div class="row">
+                <div class="col s12 m6">
+                    <h4>Get a free account</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus a pariatur quaerat accusamus
+                        adipisci id dicta</p>
+                    <h4>Dowload the free soltware</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus a pariatur quaerat accusamus
+                        adipisci id dicta,</p>
+                    <h4>Push to the platform</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus a pariatur quaerat accusamus
+                        adipisci id dicta,</p>
+                </div>
+                <div class="col s12 m6">
+                    <div class="card-panel grey lighten-3">
+                        <div class="input-field">
+                            <div class="input-field">
+                                <input type="text" id="Name" class="validate">
+                                <label for="Name"> First Name</label>
+                            </div>
+                        </div>
+                        <div class="input-field">
+                            <input type="text" id="Last Name" class="validate">
+                            <label for="Last Name">Last Name</label>
+                        </div>
+                        <div class="input-field">
+                            <input type="text" id="Email" class="validate">
+                            <label for="Email">Email</label>
+                        </div>
+                        <div class="input-field">
+                            <input type="text" id="Password" class="validate">
+                            <label for="Password">Password</label>
+                        </div>
+                        <div class="input-field">
+                            <input type="text" id="Company" class="validate">
+                            <label for="Company">Company</label>
+                        </div>
+                        <div class="input-field s12">
+                            <select>
+                                <option value="" disabled selected>Role</option>
+                                <option value="1">Professional Developer</option>
+                                <option value="2">Habbyist</option>
+                                <option value="3">Student</option>
+                                <option value="4">Maneger</option>
+                                <option value="5">Other</option>
+
+                            </select>
+                            <label for="" id="role">Role</label>
+                            <button class="btn form-control purple" style="width: 100%; height: 50px;">SIGNUP</button>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--About Us Links-->
+    <div class="about deep-purple white-text" style="padding-top: 10px; padding-bottom: 10px;">
+        <div class="container">
+            <div class="row">
+                <div class="col s12 m8">
+                    <h5>About Us</h5>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corrupti similique quibusdam sit
+                        voluptatum libero voluptatibus non iste?</p>
+                </div>
+                <div class="col s12 m4">
+                    <h5>Links</h5>
+                    <h6>Home1</h6>
+                    <h6>Solutions</h6>
+                    <h6>Signup</h6>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--footer-->
+    <footer class="purple darken-4 white-text" style="padding-top: 6px; padding-bottom: 6px;">
+        <div class="container">
+            <div class="row">
+                <div class="col s12 m10">
+                    <h6>GizoGizo © 2020</h6>
+                </div>
+                <div class="col s12 m2">
+                    <h6>Terms & Conditions</h6>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
